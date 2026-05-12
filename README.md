@@ -72,6 +72,7 @@ space-portfolio/
   |- next.config.js
   |- package-lock.json
   |- package.json
+  |- pnpm-lock.yaml
   |- postcss.config.js
   |- tailwind.config.ts
   |- tsconfig.json
@@ -128,6 +129,7 @@ Useful resources and dependencies that are used in Space Portfolio.
 - [eslint](https://www.npmjs.com/package/eslint): ^10.1.0
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.2.2
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.38.0
+- [maath](https://www.npmjs.com/package/maath): ^0.10.8
 - [next](https://www.npmjs.com/package/next): 16.2.2
 - [postcss](https://www.npmjs.com/package/postcss): ^8
 - [react](https://www.npmjs.com/package/react): 19.2.4
