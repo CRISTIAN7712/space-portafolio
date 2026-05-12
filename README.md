@@ -65,6 +65,8 @@ space-portfolio/
     |-- motion.ts
     |-- utils.ts
   |- public/
+  |- types/
+    |-- react-three.d.ts
   |- .eslintrc.json
   |- .gitignore
   |- eslint.config.mjs
