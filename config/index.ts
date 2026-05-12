@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 
 export const siteConfig: Metadata = {
-  title: "Cristian Diaz | Space Portfolio",
-  description: "Welcome to my full stack Next.js 14 space portfolio.",
+  title: "Cristian Diaz | Portafolio Full Stack",
+  description: "Portafolio personal de Cristian Diaz: desarrollo full stack, interfaces modernas y experiencias web con estética espacial.",
   keywords: [
     "reactjs",
     "nextjs",
     "vercel",
     "react",
+    "cristian diaz",
+    "desarrollador full stack",
     "space-portfolio",
     "portfolio",
     "react-icons",
@@ -35,7 +37,6 @@ export const siteConfig: Metadata = {
     "css",
   ] as Array<string>,
   authors: {
-    name: "Sanidhya Kumar Verma",
-    url: "https://github.com/sanidhyy",
+    name: "Cristian Diaz",
   },
 } as const;
