@@ -1,12 +1,3 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
-
 export const SKILL_DATA = [
   {
     skill_name: "HTML",
@@ -85,24 +76,6 @@ export const SKILL_DATA = [
     image: "mongodb.png",
     width: 40,
     height: 40,
-  },
-] as const;
-
-export const SOCIALS = [
-  {
-    name: "Instagram",
-    icon: RxInstagramLogo,
-    link: "https://instagram.com",
-  },
-  {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
-  },
-  {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://x.com/_sanidhyy",
   },
 ] as const;
 
@@ -259,86 +232,86 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "Portafolio espacial de Cristian",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
+      "Una experiencia personal construida con Next.js, React, Tailwind CSS y animaciones para presentar mi perfil full stack con una identidad visual memorable: tecnología, detalle y una vibra espacial muy mía.",
     image: "/projects/project-1.png",
-    link: "https://example.com",
+    link: "#about-me",
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "Interfaces que se sienten vivas",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
+      "Mi forma de trabajar el frontend: componentes claros, microinteracciones, diseño responsive y una experiencia que no solo se ve bien, también guía al usuario sin fricción.",
     image: "/projects/project-2.png",
-    link: "https://example.com",
+    link: "#skills",
   },
   {
-    title: "Space Themed Website",
+    title: "Productos full stack listos para crecer",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
+      "Arquitecturas que conectan frontend, backend y datos con herramientas como Node.js, Express, PostgreSQL, MongoDB, Prisma y Docker para transformar ideas en soluciones mantenibles.",
     image: "/projects/project-3.png",
-    link: "https://example.com",
+    link: "#projects",
   },
 ] as const;
 
 export const FOOTER_DATA = [
   {
-    title: "Community",
+    title: "Explora",
     data: [
       {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com",
+        name: "Sobre mí",
+        icon: null,
+        link: "#about-me",
       },
       {
-        name: "GitHub",
-        icon: RxGithubLogo,
-        link: "https://github.com",
+        name: "Stack",
+        icon: null,
+        link: "#skills",
       },
       {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.com",
+        name: "Proyectos",
+        icon: null,
+        link: "#projects",
       },
     ],
   },
   {
-    title: "Social Media",
+    title: "Enfoque",
     data: [
       {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com",
+        name: "Full stack",
+        icon: null,
+        link: "#skills",
       },
       {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://x.com/_sanidhyy",
+        name: "UI con detalle",
+        icon: null,
+        link: "#about-me",
       },
       {
-        name: "Linkedin",
-        icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
+        name: "Performance",
+        icon: null,
+        link: "#skills",
       },
     ],
   },
   {
-    title: "About",
+    title: "Cristian Diaz",
     data: [
       {
-        name: "Become Sponsor",
+        name: "Experiencia web",
         icon: null,
-        link: "https://youtube.com",
+        link: "#projects",
       },
       {
-        name: "Learning about me",
+        name: "Código mantenible",
         icon: null,
-        link: "https://example.com",
+        link: "#skills",
       },
       {
-        name: "Contact Me",
+        name: "Identidad espacial",
         icon: null,
-        link: "mailto:contact@example.com",
+        link: "#about-me",
       },
     ],
   },
@@ -360,5 +333,5 @@ export const NAV_LINKS = [
 ] as const;
 
 export const LINKS = {
-  sourceCode: "https://github.com/sanidhyy/space-portfolio",
+  sourceCode: "#projects",
 };

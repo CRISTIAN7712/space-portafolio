@@ -1,9 +1,9 @@
-'use client';
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
+import { LINKS, NAV_LINKS } from "@/constants";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -41,30 +41,13 @@ export const Navbar = () => {
               </Link>
             ))}
 
-            {/* Source Code */}
             <Link
               href={LINKS.sourceCode}
-              target="_blank"
-              rel="noreferrer noopener"
               className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
             >
-              Source Code
+              Ver proyectos
             </Link>
           </div>
-        </div>
-
-        {/* Social Icons (Web) */}
-        <div className="hidden md:flex flex-row gap-5">
-          {SOCIALS.map(({ link, name, icon: Icon }) => (
-            <Link
-              href={link}
-              target="_blank"
-              rel="noreferrer noopener"
-              key={name}
-            >
-              <Icon className="h-6 w-6 text-white" />
-            </Link>
-          ))}
         </div>
 
         {/* Hamburger Menu */}
@@ -93,27 +76,11 @@ export const Navbar = () => {
             ))}
             <Link
               href={LINKS.sourceCode}
-              target="_blank"
-              rel="noreferrer noopener"
               className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Source Code
+              Ver proyectos
             </Link>
-          </div>
-
-          {/* Social Icons */}
-          <div className="flex justify-center gap-6 mt-6">
-            {SOCIALS.map(({ link, name, icon: Icon }) => (
-              <Link
-                href={link}
-                target="_blank"
-                rel="noreferrer noopener"
-                key={name}
-              >
-                <Icon className="h-8 w-8 text-white" />
-              </Link>
-            ))}
           </div>
         </div>
       )}

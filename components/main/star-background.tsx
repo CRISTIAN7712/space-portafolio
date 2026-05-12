@@ -7,11 +7,17 @@ import {
 } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as random from "maath/random";
-import { useState, useRef, Suspense } from "react";
-import type { Points as PointsType } from "three";
+import { useState, useRef, Suspense, type Ref } from "react";
+
+type PointsRef = {
+  rotation: {
+    x: number;
+    y: number;
+  };
+};
 
 export const StarBackground = (props: PointsInstancesProps) => {
-  const ref = useRef<PointsType | null>(null);
+  const ref = useRef<PointsRef | null>(null);
   const [sphere] = useState(() =>
     random.inSphere(new Float32Array(5000), { radius: 1.2 }),
   );
@@ -26,7 +32,7 @@ export const StarBackground = (props: PointsInstancesProps) => {
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points
-        ref={ref}
+        ref={ref as unknown as Ref<never>}
         stride={3}
         positions={new Float32Array(sphere)}
         frustumCulled

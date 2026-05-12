@@ -24,7 +24,7 @@ export const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            Cristian Diaz · Full Stack Developer
           </h1>
         </motion.div>
 
@@ -33,11 +33,11 @@ export const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Providing{" "}
+            Construyo{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              the best
+              experiencias digitales
             </span>{" "}
-            project experience.
+            con identidad propia.
           </span>
         </motion.div>
 
@@ -45,15 +45,18 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          Soy Cristian Diaz, un desarrollador full stack enfocado en convertir
+          ideas en productos web claros, veloces y memorables. Este portafolio
+          combina mi lado técnico con una estética espacial para mostrar cómo
+          pienso, construyo y cuido los detalles.
         </motion.p>
 
         <motion.a
+          href="#projects"
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[220px]"
         >
-          Learn more
+          Ver proyectos
         </motion.a>
       </div>
 

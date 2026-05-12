@@ -13,15 +13,12 @@ export const Footer = () => {
               className="min-w-[200px] h-auto flex flex-col items-center justify-start"
             >
               <h3 className="font-bold text-[16px]">{column.title}</h3>
-              {column.data.map(({ icon: Icon, name, link }) => (
+              {column.data.map(({ name, link }) => (
                 <Link
                   key={`${column.title}-${name}`}
                   href={link}
-                  target="_blank"
-                  rel="noreferrer noopener"
                   className="flex flex-row items-center my-[15px]"
                 >
-                  {Icon && <Icon />}
                   <span className="text-[15px] ml-[6px]">{name}</span>
                 </Link>
               ))}
@@ -30,7 +27,7 @@ export const Footer = () => {
         </div>
 
         <div className="mb-[20px] text-[15px] text-center">
-          &copy; Cristian Diaz {new Date().getFullYear()} Inc. All rights reserved.
+          &copy; Cristian Diaz {new Date().getFullYear()}. Creado con intención.
         </div>
       </div>
     </div>
